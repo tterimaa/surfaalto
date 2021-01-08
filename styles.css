@@ -1,3 +1,40 @@
+body {
+    margin: 0;
+}
+
 h1 {
     color: blue;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+  
+.column {
+    flex: 100%;
+    max-width: 100%;
+}
+  
+.column img {
+    margin-top: 2px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+    .column {
+        max-width: 50%;
+    }
+    .column img {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 }
