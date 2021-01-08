@@ -1,9 +1,33 @@
 body {
     margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    color: #007ABD;
+}
+
+a {
+    display: block;
+    width: 200px;
+    color: #007ABD;
+    font-size: 1.5rem;
+}
+
+#links {
+    display: flex;
+    justify-content: space-around;
+}
+
+#description {
+    padding: 0 16px;
 }
 
 h1 {
-    color: blue;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+section {
+    margin-top: 32px;
 }
 
 .row {
@@ -18,7 +42,6 @@ h1 {
 }
   
 .column img {
-    margin-top: 2px;
     vertical-align: middle;
     width: 100%;
 }
@@ -27,8 +50,8 @@ h1 {
     .column {
         max-width: 50%;
     }
-    .column img {
-        margin-top: 0;
+    #description {
+        padding: 0 80px;
     }
 }
 
@@ -36,5 +59,8 @@ h1 {
     body {
         max-width: 1000px;
         margin: 0 auto;
+    }
+    #description {
+        padding: 0 160px;
     }
 }
