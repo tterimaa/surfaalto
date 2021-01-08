@@ -18,12 +18,12 @@
     </section>
     <section class="row">
         <div class="column">
-            <img src="pienempi-unit-milan-pool 1.jpg">
-            <img src="wavegarden-cove-Melburne-01 1.jpg">
+            <img class="lazy" src="https://ik.imagekit.io/tterimaa/citywave-kids_1_H7QfMHawoZ.jpg?tr=bl-30,1-50" data-src="https://ik.imagekit.io/tterimaa/citywave-kids_1_H7QfMHawoZ.jpg">
+            <img class="lazy" src="https://ik.imagekit.io/tterimaa/wavegarden-cove-Melburne-01_1_3OtwHM1T_Mkf.jpg?tr=bl-30,1-50" data-src="https://ik.imagekit.io/tterimaa/wavegarden-cove-Melburne-01_1_3OtwHM1T_Mkf.jpg">
         </div>
         <div class="column">
-            <img src="citywave-kids 1.jpg">
-            <img src="indoor-beach-bar-beach38 1.jpg">
+            <img class="lazy" src="https://ik.imagekit.io/tterimaa/citywave-kids_1_H7QfMHawoZ.jpg?tr=bl-30,1-50" data-src="https://ik.imagekit.io/tterimaa/citywave-kids_1_H7QfMHawoZ.jpg">
+            <img class="lazy" src="https://ik.imagekit.io/tterimaa/indoor-beach-bar-beach38_1_3nqKEs59k6qYV.jpg?tr=bl-30,1-50" data-src="https://ik.imagekit.io/tterimaa/indoor-beach-bar-beach38_1_3nqKEs59k6qYV.jpg">
         </div>
     </section>
     <section id="description">
@@ -32,5 +32,18 @@
     <section id="contact">
         <a href="#">Contact us</a>
     </section>
+
+    <script>
+        (function() {
+            setTimeout(function() {
+                var lazyloadImages = document.querySelectorAll(".lazy");
+                lazyloadImages.forEach(function(img) {
+                var url = img.getAttribute("data-src");
+                img.setAttribute("src", url);
+                img.removeAttribute("class");
+            })
+            }, 0)
+        })();
+    </script>
 </body>
 </html>
