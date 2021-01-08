@@ -56,6 +56,18 @@ section {
     #description {
         padding: 0 80px;
     }
+    .img-container-top {
+        padding-bottom: 1px;
+    }
+    .img-container-bottom {
+        padding-top: 1px;
+    }
+    .img-container-left {
+        padding-right: 1px;
+    }
+    .img-container-right {
+        padding-left: 1px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
