@@ -49,6 +49,11 @@ section {
     width: 100%;
 }
 
+.img-container {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
 @media screen and (min-width: 576px) {
     .column {
         max-width: 50%;
@@ -86,5 +91,9 @@ section {
     }
     #links a {
         max-width: 150px;
+    }
+    .img-container {
+        padding-top: 1px;
+        padding-bottom: 1px;
     }
 }
